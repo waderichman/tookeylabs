@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="TookeyLabs — Elite software development and consulting. Blockchain, mobile, and web solutions built for scale and security.">
   <title>TookeyLabs | Elite Software Development</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Plus+Jakarta+Sans:wght@500..800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Primary">
-      <a class="brand" href="#top" aria-label="TookeyLabs Home">
-        <img src="assets/tookeylabs-logo.svg" width="28" height="28" alt="TookeyLabs logo">
-        <span>TookeyLabs</span>
+      <a class="brand" href="#home" aria-label="Go to home">
+      <img class="logo-mark" src="./logo.svg alt="TookeyLabs logo" />
+      <span class="logo">Tookey<b>Labs</b></span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="navmenu" aria-label="Menu">☰</button>
       <ul class="navmenu" id="navmenu">
@@ -30,7 +36,7 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1 class="headline">Elite Software Development</h1>
-          <p class="tagline">We turn ambitious ideas into production-grade products. From smart contracts to mobile apps to blazing-fast web platforms, we build with security, performance, and polish.</p>
+          <p class="tagline">We turn ambitious ideas into production-grade products. From data pipelines to mobile apps to blazing-fast web platforms, we build with security, performance, and polish.</p>
           <div class="cta">
             <a class="btn btn-primary" href="#contact">Start Your Project</a>
             <a class="btn btn-ghost" href="#services">Explore Services</a>
@@ -77,6 +83,26 @@
             <h3>Security & Auditing</h3>
             <p>Threat modeling, pen-testing, hardening, and ongoing security posture reviews to protect your users and assets.</p>
           </article>
+          <article class="card reveal">
+            <div class="card-icon">🤖</div>
+            <h3>AI & Machine Learning</h3>
+            <p>Custom AI solutions, data analysis, and intelligent automation using Python, PyTorch, and cutting-edge ML frameworks.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🗃️</div>
+            <h3>Database Solutions</h3>
+            <p>High-performance database design, optimization, and migration services with PostgreSQL, Firebase, and Supabase expertise.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">⚙️</div>
+            <h3>Systems Programming</h3>
+            <p>Performance-critical applications, embedded systems, and low-level optimization using C++, Rust, and modern system architectures.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🚀</div>
+            <h3>DevOps & Automation</h3>
+            <p>We streamline your development workflow with CI/CD pipelines, automated testing, and infrastructure-as-code to ensure fast, reliable, and consistent deployments.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -89,10 +115,12 @@
           <p>Mastery of proven frameworks and platforms.</p>
         </header>
         <ul class="pill-cloud">
-          <li>TypeScript</li><li>React</li><li>React Native</li>
-          <li>Expo</li><li>Node.js</li><li>Express</li><li>tRPC</li>
-          <li>PostgreSQL</li><li>AWS</li><li>Google Cloud</li><li>Next.js</li>
-          <li>Docker</li><li>Terraform</li>
+          <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C++</li>
+          <li>React</li><li>React Native</li><li>Expo</li><li>Node.js</li>
+          <li>Express</li><li>tRPC</li><li>Next.js</li><li>PostgreSQL</li>
+          <li>Supabase</li><li>Firebase</li><li>SQL</li><li>NumPy</li>
+          <li>Pandas</li><li>AWS</li><li>Google Cloud</li><li>AWS CDK</li>
+          <li>Docker</li><li>Terraform</li><li>NoSQL</li><li>GraphQL</li>
         </ul>
       </div>
     </section>
@@ -105,10 +133,30 @@
           <p>Where deep experience meets measurable outcomes.</p>
         </header>
         <ol class="specials">
-          <li class="reveal"><h3>Mobile Applications</h3><p>Native-feel cross-platform apps that delight users across iOS and Android.</p></li>
-          <li class="reveal"><h3>Web Platforms</h3><p>Highly available SaaS, e-commerce, and enterprise systems that stand the test of time.</p></li>
-          <li class="reveal"><h3>Infrastructure</h3><p>Cloud-native microservices with observability, security, and IaC baked in.</p></li>
-          <li class="reveal"><h3>Full-Stack Solutions</h3><p>From data models to pixel-perfect interfaces — we handle the full build.</p></li>
+          <li class="reveal">
+            <h3>Mobile Applications</h3>
+            <p>Native-feel cross-platform apps that delight users across iOS and Android.</p>
+          </li>
+          <li class="reveal">
+            <h3>Web Platforms</h3>
+            <p>Highly available SaaS, e-commerce, and enterprise systems that stand the test of time.</p>
+          </li>
+          <li class="reveal">
+            <h3>Infrastructure</h3>
+            <p>Cloud-native microservices with observability, security, and IaC baked in.</p>
+          </li>
+          <li class="reveal">
+            <h3>Full-Stack Solutions</h3>
+            <p>From data models to pixel-perfect interfaces — we handle the full build.</p>
+          </li>
+          <li class="reveal">
+            <h3>AWS & Cloud Development</h3>
+            <p>Building scalable, resilient, and cost-effective solutions using the full suite of Amazon Web Services, from serverless to containers.</p>
+          </li>
+          <li class="reveal">
+            <h3>AI & Machine Learning</h3>
+            <p>Intelligent automation, predictive models, and custom AI-driven features to unlock new opportunities and data insights for your business.</p>
+          </li>
         </ol>
       </div>
     </section>
@@ -144,26 +192,26 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/tookeylabs-logo.svg" width="24" height="24" alt="TookeyLabs logo small">
-        <strong>TookeyLabs</strong>
-        <p>Crafting the future of digital innovation.</p>
-      </div>
-      <nav aria-label="Footer">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#specializations">Specializations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> TookeyLabs Incorporated. All rights reserved.</p>
-      </div>
+   <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.svg" width="28" height="28" alt="TookeyLabs logo small">
+      <strong>TookeyLabs</strong>
+      <p>Crafting the future of digital innovation.</p>
     </div>
-  </footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#specializations">Specializations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-meta">
+      <p>© <span id="year"></span> TookeyLabs Incorporated. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>
