@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TookeyLabs — Elite software development and consulting. Blockchain, mobile, and web solutions built for scale and security.">
+  <title>TookeyLabs | Elite Software Development</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="TookeyLabs Home">
+        <img src="assets/tookeylabs-logo.svg" width="28" height="28" alt="TookeyLabs logo">
+        <span>TookeyLabs</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navmenu" aria-label="Menu">☰</button>
+      <ul class="navmenu" id="navmenu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#specializations">Specializations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="headline">Elite Software Development</h1>
+          <p class="tagline">We turn ambitious ideas into production-grade products. From smart contracts to mobile apps to blazing-fast web platforms, we build with security, performance, and polish.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Start Your Project</a>
+            <a class="btn btn-ghost" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Services</h2>
+          <p>Comprehensive, senior-led delivery across the full stack.</p>
+        </header>
+        <div class="grid cards">
+          <article class="card reveal">
+            <div class="card-icon">⚡</div>
+            <h3>Full-Stack Development</h3>
+            <p>Modern architectures, scalable backends, and delightful frontends. We ship clean, tested code with CI/CD from day one.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📱</div>
+            <h3>Mobile Applications</h3>
+            <p>High-performance native and cross-platform apps using React Native / Expo to reach iOS and Android quickly.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">☁️</div>
+            <h3>Cloud Infrastructure</h3>
+            <p>AWS & GCP architectures, containerization, and IaC. We automate deployments and observability for stress-free scaling.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">✨</div>
+            <h3>Modern Web Design</h3>
+            <p>Fast, accessible, SEO-friendly sites and SaaS UIs that look sharp and convert.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🛡️</div>
+            <h3>Security & Auditing</h3>
+            <p>Threat modeling, pen-testing, hardening, and ongoing security posture reviews to protect your users and assets.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Technical Expertise</h2>
+          <p>Mastery of proven frameworks and platforms.</p>
+        </header>
+        <ul class="pill-cloud">
+          <li>TypeScript</li><li>React</li><li>React Native</li>
+          <li>Expo</li><li>Node.js</li><li>Express</li><li>tRPC</li>
+          <li>PostgreSQL</li><li>AWS</li><li>Google Cloud</li><li>Next.js</li>
+          <li>Docker</li><li>Terraform</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Specializations -->
+    <section id="specializations" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Specializations</h2>
+          <p>Where deep experience meets measurable outcomes.</p>
+        </header>
+        <ol class="specials">
+          <li class="reveal"><h3>Mobile Applications</h3><p>Native-feel cross-platform apps that delight users across iOS and Android.</p></li>
+          <li class="reveal"><h3>Web Platforms</h3><p>Highly available SaaS, e-commerce, and enterprise systems that stand the test of time.</p></li>
+          <li class="reveal"><h3>Infrastructure</h3><p>Cloud-native microservices with observability, security, and IaC baked in.</p></li>
+          <li class="reveal"><h3>Full-Stack Solutions</h3><p>From data models to pixel-perfect interfaces — we handle the full build.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container contact-card">
+        <header class="section-head center">
+          <h2>Let's Build Something Extraordinary</h2>
+          <p>Tell us about your goals and timeline. We'll reply within one business day.</p>
+        </header>
+        <form class="contact-form" action="https://formspree.io/f/xovlgjjy" method="POST">
+          <input type="hidden" name="_subject" value="New TookeyLabs Contact Form Submission">
+          <input type="hidden" name="_next" value="https://tookeylabs.com/#contact">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Get in Touch</button>
+            <p class="form-note">Or email <a href="mailto:tookeylabs@protonmail.com">tookeylabs@protonmail.com</a> · Seattle, WA</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/tookeylabs-logo.svg" width="24" height="24" alt="TookeyLabs logo small">
+        <strong>TookeyLabs</strong>
+        <p>Crafting the future of digital innovation.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#specializations">Specializations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> TookeyLabs Incorporated. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

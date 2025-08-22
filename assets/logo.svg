@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7ff"/>
+      <stop offset="100%" style="stop-color:#7c4dff"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#19ffa8"/>
+      <stop offset="100%" style="stop-color:#6ee7ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Symbol -->
+  <g transform="translate(20, 30)">
+    <!-- Central node -->
+    <circle cx="0" cy="0" r="3" fill="url(#brandGradient)"/>
+    
+    <!-- Connection points -->
+    <circle cx="-12" cy="-6" r="2" fill="url(#accentGradient)" opacity="0.9"/>
+    <circle cx="12" cy="-6" r="2" fill="url(#accentGradient)" opacity="0.9"/>
+    <circle cx="-12" cy="6" r="2" fill="url(#accentGradient)" opacity="0.9"/>
+    <circle cx="12" cy="6" r="2" fill="url(#accentGradient)" opacity="0.9"/>
+    
+    <!-- Connection lines -->
+    <line x1="0" y1="0" x2="-12" y2="-6" stroke="url(#brandGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="12" y2="-6" stroke="url(#brandGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-12" y2="6" stroke="url(#brandGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="12" y2="6" stroke="url(#brandGradient)" stroke-width="1.5" opacity="0.7"/>
+    
+    <!-- Outer arc elements -->
+    <path d="M -16,-8 A 18 18 0 0 1 0,-18" stroke="url(#accentGradient)" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M 0,18 A 18 18 0 0 1 16,8" stroke="url(#accentGradient)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="50" y="24" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="800" fill="#e8eef8">
+    Tookey<tspan fill="url(#accentGradient)">Labs</tspan>
+  </text>
+  
+  <!-- Subtle underline -->
+  <line x1="50" y1="42" x2="135" y2="42" stroke="url(#brandGradient)" stroke-width="1" opacity="0.3"/>
+</svg>
