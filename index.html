@@ -6,7 +6,6 @@
   <meta name="description" content="TookeyLabs — Elite software development and consulting. Blockchain, mobile, and web solutions built for scale and security.">
   <title>TookeyLabs | Elite Software Development</title>
   
-  <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Plus+Jakarta+Sans:wght@500..800&display=swap" rel="stylesheet">
@@ -32,7 +31,6 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero" id="top">
       <div class="container hero-inner">
         <div class="hero-copy">
@@ -51,7 +49,6 @@
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services" class="section">
       <div class="container">
         <header class="section-head">
@@ -108,7 +105,6 @@
       </div>
     </section>
 
-    <!-- Expertise -->
     <section id="expertise" class="section alt">
       <div class="container">
         <header class="section-head">
@@ -126,7 +122,6 @@
       </div>
     </section>
 
-    <!-- Specializations -->
     <section id="specializations" class="section">
       <div class="container">
         <header class="section-head">
@@ -162,14 +157,13 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section alt">
       <div class="container contact-card">
         <header class="section-head center">
           <h2>Let's Build Something Extraordinary</h2>
           <p>Tell us about your goals and timeline. We'll reply within one business day.</p>
         </header>
-        <form class="contact-form" action="https://formspree.io/f/xovlgjjy" method="POST">
+        <form class="contact-form" id="contact-form">
           <input type="hidden" name="_subject" value="New TookeyLabs Contact Form Submission">
           <input type="hidden" name="_next" value="https://tookeylabs.com/#contact">
           <div class="form-row">
@@ -186,6 +180,7 @@
           </div>
           <div class="form-actions">
             <button class="btn btn-primary" type="submit">Get in Touch</button>
+            <p class="form-message"></p>
             <p class="form-note">Or email <a href="mailto:tookeylabs@protonmail.com">tookeylabs@protonmail.com</a> · Seattle, WA</p>
           </div>
         </form>
@@ -194,26 +189,26 @@
   </main>
 
    <footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/logo.svg" width="28" height="28" alt="TookeyLabs logo small">
-      <span class="logo-text">Tookey<b style="color: #0284c7;">Labs</b></span>
-      <p>Crafting the future of digital innovation.</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" width="28" height="28" alt="TookeyLabs logo small">
+        <span class="logo-text">Tookey<b style="color: #0284c7;">Labs</b></span>
+        <p>Crafting the future of digital innovation.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#specializations">Specializations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> TookeyLabs Incorporated. All rights reserved.</p>
+      </div>
     </div>
-    <nav aria-label="Footer">
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#specializations">Specializations</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="footer-meta">
-      <p>© <span id="year"></span> TookeyLabs Incorporated. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="script.js"></script>
 </body>

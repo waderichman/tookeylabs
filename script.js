@@ -30,14 +30,36 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Contact form handler (demo only)
-function handleSubmit(e){
-  e.preventDefault();
-  const data = Object.fromEntries(new FormData(e.target).entries());
-  // Replace this with your form backend or email service
-  alert(`Thanks, ${data.name}! We'll reach out at ${data.email}.`);
-  e.target.reset();
-  return false;
+// Contact form handler (using fetch)
+const contactForm = document.getElementById('contact-form');
+const formMessage = document.querySelector('.form-message');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const action = 'https://formspree.io/f/xovlgjjy';
+    try {
+      const response = await fetch(action, {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        formMessage.textContent = "Thanks! Your message has been sent. We'll be in touch soon. 👍";
+        formMessage.style.color = 'green';
+        form.reset();
+      } else {
+        formMessage.textContent = 'Oops! There was a problem submitting your form. Please try again or email us directly. 😔';
+        formMessage.style.color = 'red';
+      }
+    } catch (error) {
+      formMessage.textContent = 'An unexpected error occurred. Please check your network and try again. 😵';
+      formMessage.style.color = 'red';
+    }
+  });
 }
 
 // Footer year
